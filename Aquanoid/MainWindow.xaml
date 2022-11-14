@@ -1,0 +1,14 @@
+﻿<Window x:Class="Aquanoid.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aquanoid"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="600">
+    <Canvas Focusable="True" x:Name="myCanvas" KeyDown="OnKeyDown" KeyUp="OnKeyUp" Background="LightBlue">
+        <Rectangle x:Name="player" Fill="Black" Height="13" Canvas.Left="250" Stroke="White" Canvas.Top="387" Width="100" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Rectangle x:Name="ball" Height="15" Fill="Yellow" Canvas.Left="292" Stroke="Black" Canvas.Top="358" Width="16" RadiusX="7" RadiusY="7"/>
+
+    </Canvas>
+</Window>
